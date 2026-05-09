@@ -1,0 +1,38 @@
+.animatedCursor {
+    width: 80%;
+    height: 40dvh;
+    margin: 20px auto;
+    background-color: #111;
+    position: relative;
+    overflow: hidden;
+
+    & span {
+        display: block;
+        width: 70px;
+        height: 70px;
+        background: url(https://cdn.iconscout.com/icon/free/png-512/free-heart-icon-svg-download-png-13686787.png?f=webp&w=512);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        animation: up 5s;
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+        filter: hue-rotate(10deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(-500px);
+        filter: hue-rotate(120deg);
+        opacity: 0;
+    }
+
+}

@@ -1,3 +1,2 @@
-body {
-  background-color: #333;
-}
+@import './css/base.css';
+@import './css/animatedCursor.css';
